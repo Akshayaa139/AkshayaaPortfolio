@@ -1,0 +1,57 @@
+/* Reset and base styles */
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #3b82f6;
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-base: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-4xl: 6rem;
+
+  --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  --transition-base: 0.3s ease;
+}
+
+/* Skill progress bars */
+.skill-item__progress {
+  height: 0.5rem;
+  background: var(--color-primary);
+  border-radius: 0.25rem;
+  transition: width var(--transition-base);
+}
+
+.skill-item__progress--85 {
+  width: 85%;
+}
+.skill-item__progress--90 {
+  width: 90%;
+}
+.skill-item__progress--80 {
+  width: 80%;
+}
+.skill-item__progress--95 {
+  width: 95%;
+}
+.skill-item__progress--75 {
+  width: 75%;
+}
+
+/* Other existing styles from main.css and components.css */
