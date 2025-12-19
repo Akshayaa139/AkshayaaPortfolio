@@ -11,6 +11,7 @@ class Portfolio {
         this.setupContactForm();
         this.setupCounters();
         this.setupCursor();
+        this.setupTypingEffect();
         this.initAOS();
     }
 
@@ -70,13 +71,13 @@ class Portfolio {
     setupScrollEffects() {
         // Progress bar
         const progressBar = document.querySelector('.progress-bar');
-        
+
         window.addEventListener('scroll', () => {
             const windowHeight = window.innerHeight;
             const documentHeight = document.documentElement.scrollHeight - windowHeight;
             const scrolled = window.scrollY;
             const progress = (scrolled / documentHeight) * 100;
-            
+
             if (progressBar) {
                 progressBar.style.width = `${progress}%`;
             }
@@ -84,7 +85,7 @@ class Portfolio {
 
         // Header background on scroll
         const header = document.querySelector('.header');
-        
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.style.background = 'rgba(248, 249, 250, 0.95)';
@@ -106,11 +107,11 @@ class Portfolio {
                 btn.classList.add('active');
 
                 const filter = btn.getAttribute('data-filter');
-                
+
                 // Filter projects
                 projectCards.forEach(card => {
                     const category = card.getAttribute('data-category');
-                    
+
                     if (filter === 'all' || category.includes(filter)) {
                         card.style.display = 'block';
                         setTimeout(() => {
@@ -141,10 +142,10 @@ class Portfolio {
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
-            
+
             // Validate form
             if (this.validateForm(data)) {
                 await this.submitForm(data);
@@ -154,7 +155,7 @@ class Portfolio {
 
     validateForm(data) {
         const errors = {};
-        
+
         // Name validation
         if (!data.name || data.name.trim().length < 2) {
             errors.name = 'Name must be at least 2 characters long';
@@ -178,7 +179,7 @@ class Portfolio {
 
         // Display errors
         this.displayFormErrors(errors);
-        
+
         return Object.keys(errors).length === 0;
     }
 
@@ -211,7 +212,7 @@ class Portfolio {
         try {
             // Simulate form submission (replace with actual API call)
             await new Promise(resolve => setTimeout(resolve, 2000));
-            
+
             // Success message
             this.showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
             document.getElementById('contact-form').reset();
@@ -228,7 +229,7 @@ class Portfolio {
         const messageDiv = document.createElement('div');
         messageDiv.className = `message message--${type}`;
         messageDiv.textContent = message;
-        
+
         // Style the message
         Object.assign(messageDiv.style, {
             position: 'fixed',
@@ -264,7 +265,7 @@ class Portfolio {
     // Animated counters
     setupCounters() {
         const counters = document.querySelectorAll('[data-counter]');
-        
+
         const observerOptions = {
             threshold: 0.5,
             rootMargin: '0px 0px -50px 0px'
@@ -310,7 +311,7 @@ class Portfolio {
 
         const cursor = document.querySelector('.cursor');
         const cursorFollower = document.querySelector('.cursor-follower');
-        
+
         let mouseX = 0;
         let mouseY = 0;
         let cursorX = 0;
@@ -333,7 +334,7 @@ class Portfolio {
             if (cursor) {
                 cursor.style.transform = `translate(${cursorX - 10}px, ${cursorY - 10}px)`;
             }
-            
+
             if (cursorFollower) {
                 cursorFollower.style.transform = `translate(${followerX - 20}px, ${followerY - 20}px)`;
             }
@@ -345,13 +346,13 @@ class Portfolio {
 
         // Cursor hover effects
         const hoverElements = document.querySelectorAll('a, button, .project-card, .achievement-card');
-        
+
         hoverElements.forEach(element => {
             element.addEventListener('mouseenter', () => {
                 if (cursor) cursor.style.transform += ' scale(1.5)';
                 if (cursorFollower) cursorFollower.style.transform += ' scale(1.5)';
             });
-            
+
             element.addEventListener('mouseleave', () => {
                 if (cursor) cursor.style.transform = cursor.style.transform.replace(' scale(1.5)', '');
                 if (cursorFollower) cursorFollower.style.transform = cursorFollower.style.transform.replace(' scale(1.5)', '');
@@ -359,11 +360,50 @@ class Portfolio {
         });
     }
 
+    // Typing Effect
+    setupTypingEffect() {
+        const textElement = document.getElementById('typing-text');
+        if (!textElement) return;
+
+        const roles = ["an SDE", "a Software Engineer", "a Problem Solver", "an Event Head", "an AI&ML Engineer"];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        const type = () => {
+            const currentRole = roles[roleIndex];
+
+            if (isDeleting) {
+                textElement.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 50;
+            } else {
+                textElement.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 100;
+            }
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                typeSpeed = 500; // Pause before new word
+            }
+
+            setTimeout(type, typeSpeed);
+        };
+
+        type();
+    }
+
     // Initialize AOS (Animate On Scroll)
     initAOS() {
         // Custom AOS implementation
         const animatedElements = document.querySelectorAll('[data-aos]');
-        
+
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -438,11 +478,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        
+
         if (target) {
             const headerHeight = document.querySelector('.header').offsetHeight;
             const targetPosition = target.offsetTop - headerHeight;
-            
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'

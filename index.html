@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,30 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/animations.css">
-    <meta name="description" content="Akshayaa Prakash - Software Engineer specializing in full-stack development, AI/ML, and modern web technologies.">
+    <meta name="description"
+        content="Akshayaa Prakash - Software Engineer specializing in full-stack development, AI/ML, and modern web technologies. Expert in React, Node.js, and Python.">
+    <meta name="keywords"
+        content="Akshayaa Prakash, Software Engineer, SDE, Full Stack Developer, AI/ML Engineer, React, Node.js, Python, Portfolio">
+    <meta property="og:title" content="Akshayaa Prakash - Software Engineer">
+    <meta property="og:description" content="Building scalable web applications and AI solutions.">
+    <meta property="og:type" content="website">
 </head>
+
 <body>
     <!-- Cursor Effects -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
-    
+
     <!-- Progress Bar -->
     <div class="progress-bar"></div>
-    
+
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
             <div class="nav__logo">
                 <span class="logo-text">Akshayaa</span>
             </div>
-            
+
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -52,17 +60,17 @@
                         <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
-                
+
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
             </div>
-            
+
             <div class="nav__actions">
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <span class="theme-toggle__icon">🌙</span>
                 </button>
-                
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-line"></i>
                 </div>
@@ -82,31 +90,46 @@
                             <span class="hero__greeting">Hello, I'm</span>
                             <span class="hero__name">Akshayaa Prakash</span>
                         </h1>
-                        <p class="hero__subtitle">Software Engineer</p>
-                        <p class="hero__description">
-                            Passionate about creating innovative solutions through full-stack development, 
-                            AI/ML integration, and modern web technologies. Transforming ideas into 
-                            impactful digital experiences.
-                        </p>
-                        
+                        <div class="hero__role-container">
+                            <span class="hero__role-prefix">I am </span>
+                            <span class="hero__role-typing" id="typing-text"></span>
+                        </div>
+
+                        <div class="hero__visual-proof">
+                            <span class="proof-item"><i class="ri-code-box-line"></i> 10+ Projects</span>
+                            <span class="proof-divider">|</span>
+                            <span class="proof-item"><i class="ri-terminal-box-line"></i> 200+ LeetCode Problems</span>
+                            <span class="proof-divider">|</span>
+                            <span class="proof-item"><i class="ri-trophy-line"></i> Hackathon Finalist</span>
+                        </div>
+
+                        <div class="hero__availability-badge">
+                            <span class="status-dot"></span>
+                            Actively seeking SDE / SWE roles
+                        </div>
+
                         <div class="hero__buttons">
-                            <a href="#contact" class="btn btn--primary">
-                                Let's Connect
+                            <a href="./Akshayaa_Prakash_Resume.pdf" class="btn btn--primary" download target="_blank">
+                                Download Resume
                             </a>
-                            <a href="#projects" class="btn btn--secondary">
-                                View My Work
+                            <a href="#projects" class="btn btn--secondary"
+                                style="border-color: rgba(255,255,255,0.8); color: #fff;">
+                                Explore My Work
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="hero__social">
-                        <a href="mailto:akshayaa.23cs@kct.ac.in" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:akshlearn13@gmail.com" class="social-link" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="ri-mail-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290" class="social-link"
+                            target="_blank" rel="noopener noreferrer">
                             <i class="ri-linkedin-line"></i>
                         </a>
-                        <a href="https://github.com/Akshayaa139" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Akshayaa139" class="social-link" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="ri-github-line"></i>
                         </a>
                         <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -117,17 +140,14 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="hero__image" data-aos="fade-up" data-aos-delay="200">
                     <div class="hero__img-container">
-                        <img src="./Aksh.jpg" 
-                             alt="Akshayaa Prakash - Software Engineer" 
-                             class="hero__img" 
-                             loading="eager">
+                        <img src="./hero-profile.jpg" alt="Akshayaa Prakash - Software Engineer" class="hero__img"
+                            loading="eager">
                         <div class="hero__img-overlay"></div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- About Section -->
@@ -137,25 +157,25 @@
                     <h2 class="section__title">About Me</h2>
                     <p class="section__subtitle">Passionate Software Engineer</p>
                 </div>
-                
+
                 <div class="about__content">
                     <div class="about__text" data-aos="fade-right">
                         <p class="about__description">
-                            I'm a dedicated Software Engineer with a strong foundation in computer science 
-                            and a passion for developing innovative solutions. Currently pursuing my B.E. 
-                            in Computer Science Engineering at Kumaraguru College of Technology, I specialize 
+                            I'm a dedicated Software Engineer with a strong foundation in computer science
+                            and a passion for developing innovative solutions. Currently pursuing my B.E.
+                            in Computer Science Engineering at Kumaraguru College of Technology, I specialize
                             in full-stack development, AI/ML integration, and modern web technologies.
                         </p>
-                        
+
                         <p class="about__description">
-                            My journey in technology is driven by curiosity and a desire to create 
-                            meaningful digital experiences. I enjoy tackling complex problems and 
+                            My journey in technology is driven by curiosity and a desire to create
+                            meaningful digital experiences. I enjoy tackling complex problems and
                             turning ideas into reality through clean, efficient code.
                         </p>
-                        
+
                         <div class="about__stats">
                             <div class="stat" data-aos="fade-up" data-aos-delay="100">
-                                <span class="stat__number" data-counter="15">0</span>
+                                <span class="stat__number" data-counter="10">0</span>
                                 <span class="stat__label">Projects Completed</span>
                             </div>
                             <div class="stat" data-aos="fade-up" data-aos-delay="200">
@@ -163,1082 +183,1647 @@
                                 <span class="stat__label">Awards Won</span>
                             </div>
                             <div class="stat" data-aos="fade-up" data-aos-delay="300">
-                                <span class="stat__number" data-counter="3">0</span>
+                                <span class="stat__number" data-counter="2">0</span>
                                 <span class="stat__label">Years Experience</span>
+                            </div>
+                            <div class="stat" data-aos="fade-up" data-aos-delay="400">
+                                <span class="stat__number" data-counter="8">0</span>
+                                <span class="stat__label">Hackathons Projects</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="about__image" data-aos="fade-left">
                         <div class="about__img-container">
-                            <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                                 alt="Workspace" 
-                                 class="about__img">
+                            <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Workspace" class="about__img" loading="lazy">
                             <div class="about__img-overlay"></div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Skills Section -->
-<!-- Skills Section -->
-<!-- Skills Section -->
-<section class="skills section" id="skills">
-    <div class="skills__container container">
-        <div class="section__header" data-aos="fade-up">
-            <h2 class="section__title">Skills & Expertise</h2>
-            <p class="section__subtitle">Technologies I work with</p>
-        </div>
-        
-        <div class="skills__grid" data-aos="fade-up" data-aos-delay="100">
-            <!-- Technical Skills -->
-            <div class="skill-category">
-                <div class="skill-category__header">
-                    <i class="ri-code-line skill-category__icon"></i>
-                    <h3 class="skill-category__title">Technical Skills</h3>
-                </div>
-                <div class="skills__list">
-                    <div class="skill-item">
-                        <span class="skill-item__name">Data Structures & Algorithms</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 85%"></div>
+                <!-- Skills Section -->
+                <!-- Skills Section -->
+                <section class="skills section" id="skills">
+                    <div class="skills__container container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Skills & Expertise</h2>
+                            <p class="section__subtitle">Technologies I work with</p>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">React.js</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">JavaScript</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">TypeScript</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">HTML5/CSS3</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">Tailwind CSS</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Backend Skills -->
-            <div class="skill-category">
-                <div class="skill-category__header">
-                    <i class="ri-server-line skill-category__icon"></i>
-                    <h3 class="skill-category__title">Backend Skills</h3>
-                </div>
-                <div class="skills__list">
-                    <div class="skill-item">
-                        <span class="skill-item__name">Node.js</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">Python</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">Express.js</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">RESTful APIs</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__name">MongoDB</span>
-                        <div class="skill-item__level">
-                            <div class="skill-item__progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Tools & Soft Skills -->
-            <div class="skill-category">
-                <div class="skill-category__header">
-                    <i class="ri-tools-line skill-category__icon"></i>
-                    <h3 class="skill-category__title">Tools & Soft Skills</h3>
-                </div>
-                <div class="skills__tags">
-                    <div class="skill-tag">
-                        <span>Git</span>
-                        <i class="ri-git-branch-line"></i>
-                    </div>
-                    <div class="skill-tag">
-                        <span>VS Code</span>
-                        <i class="ri-code-box-line"></i>
-                    </div>
-                    <div class="skill-tag">
-                        <span>Figma</span>
-                        <i class="ri-pencil-ruler-line"></i>
-                    </div>
-                    <div class="skill-tag">
-                        <span>Docker</span>
-                        <i class="ri-docker-line"></i>
-                    </div>
-                    <div class="skill-tag">
-                        <span>Teamwork</span>
-                        <i class="ri-team-line"></i>
-                    </div>
-                    <div class="skill-tag">
-                        <span>Problem Solving</span>
-                        <i class="ri-lightbulb-flash-line"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Coding Profile Section -->
-<section class="coding-profile section" id="coding-profile">
-    <div class="coding-profile__container container">
-        <div class="section__header" data-aos="fade-up">
-            <h2 class="section__title">Coding Profile</h2>
-            <p class="section__subtitle">My competitive programming journey</p>
-        </div>
-        
-        <div class="coding-profile__content" data-aos="fade-up" data-aos-delay="100">
-            <div class="coding-profile__platform">
-                <div class="platform-icon">
-                    <i class="ri-code-box-line"></i>
-                </div>
-                <div class="platform-info">
-                    <h3 class="platform-name">TakeUforward (Striver)</h3>
-                    <a href="https://takeuforward.org/profile/akshlearn13@gmail.com" rel="noopener" 
-                       class="platform-link" target="_blank">
-                        View Full Profile
-                    </a>
-                </div>
-            </div>
-            
-            <div class="coding-profile__stats">
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="ri-star-line"></i>
-                    </div>
-                    <div class="stat-info">
-                        <span class="stat-number" data-counter="200">0</span>
-                        <span class="stat-label">Problems Solved</span>
-                    </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="ri-trophy-line"></i>
-                    </div>
-                    <div class="stat-info">
-                        <span class="stat-number" data-counter="2">0</span>
-                        <span class="stat-label">Contests</span>
-                    </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="ri-medal-line"></i>
-                    </div>
-                    <div class="stat-info">
-                        <span class="stat-number">200</span>
-                        <span class="stat-label">Leetcode + GFG</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                        <div class="skills__grid" data-aos="fade-up" data-aos-delay="100">
+                            <!-- 1. Languages -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-code-line skill-category__icon"></i>
+                                    <h3 class="skill-category__title">Languages</h3>
+                                </div>
+                                <div class="skills__list">
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">JavaScript</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">TypeScript</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">Python</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">C++</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- Projects Section -->
-    
-<section class="projects section" id="projects">
-    <div class="projects__container container">
-        <div class="section__header" data-aos="fade-up">
-            <h2 class="section__title">Featured Projects</h2>
-            <p class="section__subtitle">My technical implementations</p>
-        </div>
-        
-        <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Apps</button>
-            <button class="filter-btn" data-filter="ai">AI/ML</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-        </div>
-        
-        <div class="projects__grid">
-            <!-- Project 1: Campus Sense -->
-            <article class="project-card" data-category="web ai" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="Campus Sense Project" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/actionhub-org/Campus-Sense" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Campus Sense</h3>
-                    <p class="project-card__description">
-                        AI-powered event management system for universities with smart resource recommendations.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Gemini AI</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 2: AI Mock Interviewer -->
-            <article class="project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="150">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="AI Interview Mocker" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/Akshayaa139/AI-Interview-mocker" class="btn btn--sm btn--primary" target="_blank">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=9lez6djrFas" class="btn btn--sm btn--secondary" target="_blank">
-                                <i class="ri-youtube-line"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">AI Mock Interviewer</h3>
-                    <p class="project-card__description">
-                        Adaptive technical interview coach with cheating detection and instant feedback.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Drizzle ORM</span>
-                        <span class="tech-tag">Gemini AI</span>
-                        <span class="tech-tag">LLM</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 3: Ping Me -->
-            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="Ping Me Chat App" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/Akshayaa139/MERN-ChatAI" class="btn btn--sm btn--primary" target="_blank">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=JTu9LErT0Qk" class="btn btn--sm btn--secondary" target="_blank">
-                                <i class="ri-youtube-line"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Ping Me</h3>
-                    <p class="project-card__description">
-                        Real-time chat app with typing indicators and conversation history.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">MERN Stack</span>
-                        <span class="tech-tag">Socket.IO</span>
-                        <span class="tech-tag">Chakra UI</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 4: Floralnsight -->
-            <article class="project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="250">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="Floralnsight Plant Analysis" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/Akshayaa139/PlantAnalysisTool" class="btn btn--sm btn--primary" target="_blank">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=2S0bJ60wKGc" class="btn btn--sm btn--secondary" target="_blank">
-                                <i class="ri-youtube-line"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Floralnsight</h3>
-                    <p class="project-card__description">
-                        AI-powered tool to diagnose plant health through image analysis.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">MERN</span>
-                        <span class="tech-tag">AI Analysis</span>
-                        <span class="tech-tag">Image Processing</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 5: Pharmacist Pro -->
-            <article class="project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="Pharmacist Pro" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/Akshayaa139/PharmacyAssist" class="btn btn--sm btn--primary" target="_blank">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=NRjakuIJkg4" class="btn btn--sm btn--secondary" target="_blank">
-                                <i class="ri-youtube-line"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Pharmacist Pro</h3>
-                    <p class="project-card__description">
-                        AI-powered prescription management system with OCR processing.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">Tesseract OCR</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LLM</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 6: Actionhub -->
-            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="350">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="Actionhub Task Management" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/Akshayaa139/Actionhub" class="btn btn--sm btn--primary" target="_blank">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=zxtPYQEKKs8" class="btn btn--sm btn--secondary" target="_blank">
-                                <i class="ri-youtube-line"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Actionhub</h3>
-                    <p class="project-card__description">
-                        Community-based task management tool with real-time collaboration.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Express.Js</span>
-                        <span class="tech-tag">Tailwind CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 7: Daily Diet -->
-            <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="400">
-                <div class="project-card__image">
-                    <img src="./DailyDiet.png" 
-                         alt="Daily Diet Smart Plate" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <span class="btn btn--sm btn--secondary">
-                                <i class="ri-presentation-line"></i> MADE 2024
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Daily Diet (Smart Plate)</h3>
-                    <p class="project-card__description">
-                        Smart plate providing real-time nutrition insights and waste management.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Nutrition Analysis</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SDG 4</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 8: Autism Prediction -->
-            <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="450">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="Autism Disorder Prediction" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <a href="https://github.com/Akshayaa139/Autism-Prediction-Project" class="btn btn--sm btn--primary" target="_blank">
-                                <i class="ri-github-line"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Autism Disorder Prediction</h3>
-                    <p class="project-card__description">
-                        ML model for early detection of autism spectrum disorder.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Classification</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 9: iOS App -->
-            <article class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
-                <div class="project-card__image">
-                    <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                         alt="iOS App for Infinite Engineers" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <span class="btn btn--sm btn--secondary">
-                                <i class="ri-apple-line"></i> iOS App
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Infinite Engineers iOS App</h3>
-                    <p class="project-card__description">
-                        Hands-on learning app for kids against rote memorization (SDG 4).
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">Swift</span>
-                        <span class="tech-tag">Xcode</span>
-                        <span class="tech-tag">Peer Learning</span>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Project 10: Infinite Engineers Website -->
-            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="550">
-                <div class="project-card__image">
-                    <img src=".\Screenshot 2025-03-01 230243.png" 
-                         alt="Infinite Engineers Website" 
-                         class="project__img"
-                         loading="lazy">
-                    <div class="project-card__overlay">
-                        <div class="project-card__actions">
-                            <span class="btn btn--sm btn--secondary">
-                                <i class="ri-global-line"></i> Website
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Infinite Engineers Website</h3>
-                    <p class="project-card__description">
-                        Dynamic website for STEM education company promoting practical learning.
-                    </p>
-                    <div class="project-card__tech">
-                        <span class="tech-tag">Full Stack</span>
-                        <span class="tech-tag">Responsive</span>
-                        <span class="tech-tag">STEM</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
+                            <!-- 2. Backend -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-server-line skill-category__icon"></i>
+                                    <h3 class="skill-category__title">Backend</h3>
+                                </div>
+                                <div class="skills__list">
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">Node.js</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">Express.js</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">REST APIs</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">MongoDB / Mongoose</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- Experience Section -->
-        <section class="experience section" id="experience">
-            <div class="experience__container container">
+                            <!-- 3. Frontend -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-layout-line skill-category__icon"></i>
+                                    <h3 class="skill-category__title">Frontend</h3>
+                                </div>
+                                <div class="skills__list">
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">React.js</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">HTML / CSS</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">Tailwind CSS</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. AI / Data -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-brain-line skill-category__icon"></i>
+                                    <h3 class="skill-category__title">AI / Data</h3>
+                                </div>
+                                <div class="skills__list">
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">LLMs (Gemini)</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">OCR (Tesseract)</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">Basic ML</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5. Tools & Dev -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-tools-line skill-category__icon"></i>
+                                    <h3 class="skill-category__title">Tools & Dev</h3>
+                                </div>
+                                <div class="skills__tags">
+                                    <div class="skill-tag"><span>Git / GitHub</span><i class="ri-git-branch-line"></i>
+                                    </div>
+                                    <div class="skill-tag"><span>Docker</span><i class="ri-docker-line"></i></div>
+                                    <div class="skill-tag"><span>Postman</span><i class="ri-code-s-slash-line"></i>
+                                    </div>
+                                    <div class="skill-tag"><span>ELK Stack</span><i class="ri-stack-line"></i></div>
+                                    <div class="skill-tag"><span>Microsoft Sentinel</span><i
+                                            class="ri-shield-check-line"></i></div>
+                                    <div class="skill-tag"><span>Figma</span><i class="ri-pencil-ruler-line"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__sde-note"
+                            style="text-align: center; margin-top: 2rem; color: var(--text-color); font-size: 1.05rem;"
+                            data-aos="fade-up">
+                            “Comfortable with problem solving (arrays, strings, hashing, two‑pointers, recursion) and
+                            system design basics (RESTful services, auth, DB modeling).”
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Coding Profile Section -->
+                <section class="coding-profile section" id="coding-profile">
+                    <div class="coding-profile__container container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Coding Profile</h2>
+                            <p class="section__subtitle">My competitive programming journey</p>
+                        </div>
+
+                        <div class="coding-profile__content" data-aos="fade-up" data-aos-delay="100">
+                            <div class="coding-profile__platform">
+                                <div class="platform-icon">
+                                    <i class="ri-code-box-line"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">TakeUforward (Striver)</h3>
+                                    <a href="https://takeuforward.org/profile/akshlearn13@gmail.com" rel="noopener"
+                                        class="platform-link" target="_blank">
+                                        View Full Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="coding-profile__platform">
+                                <div class="platform-icon">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">LeetCode</h3>
+                                    <div class="platform-stats"
+                                        style="color: var(--text-color); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                        <span>200+ Problems Solved</span>
+                                    </div>
+                                    <a href="https://leetcode.com/u/Akshayaa13/" rel="noopener" class="platform-link"
+                                        target="_blank">
+                                        View Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="coding-profile__platform">
+                                <div class="platform-icon">
+                                    <i class="ri-terminal-box-line"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">GeeksForGeeks</h3>
+                                    <div class="platform-stats"
+                                        style="color: var(--text-color); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                        <span>Problem Solver</span>
+                                    </div>
+                                    <a href="https://www.geeksforgeeks.org/user/akshlearn13/" rel="noopener"
+                                        class="platform-link" target="_blank">
+                                        View Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="coding-profile__graph" style="margin-top: 2rem; text-align: center;">
+                                <div class="leetcode-dashboard" id="dsa-dashboard">
+                                    <h3 class="platform-name"
+                                        style="margin-bottom: 2rem; font-size: 1.25rem; text-align: center;">DSA
+                                        Progress</h3>
+
+                                    <!-- Loading State -->
+                                    <div id="leetcode-loading"
+                                        style="display: block; color: var(--text-color); padding: 2rem;">
+                                        Loading stats...
+                                    </div>
+
+                                    <div class="leetcode-stats-row" id="leetcode-content"
+                                        style="display: none; opacity: 0; transition: opacity 0.5s ease;">
+                                        <!-- Circular Progress -->
+                                        <div class="circle-progress-container">
+                                            <svg class="circle-progress-svg" viewBox="0 0 160 160">
+                                                <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+                                                <circle class="circle-fg" cx="80" cy="80" r="70"
+                                                    id="total-solved-circle"></circle>
+                                            </svg>
+                                            <div class="circle-text">
+                                                <span class="total-solved" id="total-solved-count">0</span>
+                                                <span class="label">Solved</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Stats Breakdown -->
+                                        <div class="leetcode-stats-breakdown">
+                                            <div class="leetcode-stat-item">
+                                                <div class="stat-item-header">
+                                                    <span class="stat-item-label easy-text">Easy</span>
+                                                    <span class="stat-item-count"><span id="easy-solved">0</span> /
+                                                        <span id="easy-total">0</span></span>
+                                                </div>
+                                                <div class="stat-item-progress-bg">
+                                                    <div class="stat-item-progress-fill easy-fill" id="easy-bar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="leetcode-stat-item">
+                                                <div class="stat-item-header">
+                                                    <span class="stat-item-label medium-text">Medium</span>
+                                                    <span class="stat-item-count"><span id="medium-solved">0</span> /
+                                                        <span id="medium-total">0</span></span>
+                                                </div>
+                                                <div class="stat-item-progress-bg">
+                                                    <div class="stat-item-progress-fill medium-fill" id="medium-bar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="leetcode-stat-item">
+                                                <div class="stat-item-header">
+                                                    <span class="stat-item-label hard-text">Hard</span>
+                                                    <span class="stat-item-count"><span id="hard-solved">0</span> /
+                                                        <span id="hard-total">0</span></span>
+                                                </div>
+                                                <div class="stat-item-progress-bg">
+                                                    <div class="stat-item-progress-fill hard-fill" id="hard-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p style="font-size: 0.8rem; color: var(--text-color); margin-top: 0.5rem;">
+                                    Consistent problem solving and continuous improvement.
+                                </p>
+                            </div>
+
+                            <div class="coding-profile__note"
+                                style="margin-top: 1.5rem; text-align: center; color: var(--text-color);">
+                                <p>“Currently solving DSA problems using the TakeUforward roadmap – focusing on arrays,
+                                    strings, and DP.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Deep Dive Section -->
+                <section class="deep-dive section" id="deep-dive">
+                    <div class="container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Technical Deep Dive</h2>
+                            <p class="section__subtitle">System Design & Architecture</p>
+                        </div>
+
+                        <div class="skills__grid" data-aos="fade-up">
+                            <!-- System Design Card -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-node-tree skill-category__icon"></i>
+                                    <h3 class="skill-category__title">System Designs</h3>
+                                </div>
+                                <div class="skills__list">
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">Event-Driven Architecture (Ping Me)</span>
+                                        <p
+                                            style="font-size: 0.85rem; color: var(--color-gray-600); margin-top: 0.5rem;">
+                                            Leveraged Socket.io for bi-directional communication, ensuring sub-100ms
+                                            latency. Implemented redis for caching and message queue for reliability.
+                                        </p>
+                                    </div>
+                                    <div class="skill-item" style="margin-top: 1rem;">
+                                        <span class="skill-item__name">Scalable AI Service (Interview Mocker)</span>
+                                        <p
+                                            style="font-size: 0.85rem; color: var(--color-gray-600); margin-top: 0.5rem;">
+                                            Decoupled model inference from API server using a job queue, preventing
+                                            timeouts during heavy load on LLM generation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Performance Card -->
+                            <div class="skill-category">
+                                <div class="skill-category__header">
+                                    <i class="ri-speed-line skill-category__icon"></i>
+                                    <h3 class="skill-category__title">Performance Wins</h3>
+                                </div>
+                                <div class="skills__list">
+                                    <div class="skill-item">
+                                        <span class="skill-item__name">98% Data Accuracy (Infinite Engineers)</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 98%"></div>
+                                        </div>
+                                        <p
+                                            style="font-size: 0.85rem; color: var(--color-gray-600); margin-top: 0.5rem;">
+                                            Optimized data pipelines to handle large datasets with high integrity.
+                                        </p>
+                                    </div>
+                                    <div class="skill-item" style="margin-top: 1rem;">
+                                        <span class="skill-item__name">40% Faster Load Times</span>
+                                        <div class="skill-item__level">
+                                            <div class="skill-item__progress" style="width: 40%"></div>
+                                        </div>
+                                        <p
+                                            style="font-size: 0.85rem; color: var(--color-gray-600); margin-top: 0.5rem;">
+                                            Implemented lazy loading, image optimization (WebP), and code splitting
+                                            across all projects.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section (New) -->
+                <!-- Motivation / Philosophy Section (New) -->
+                <section class="motivation section" id="motivation"
+                    style="background: var(--color-gray-50); padding: 6rem 0; text-align: center; position: relative; overflow: hidden;">
+                    <!-- Decorative background element -->
+                    <div
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.03; pointer-events: none; background-image: radial-gradient(var(--color-primary) 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+
+                    <div class="container" style="position: relative; z-index: 1;">
+                        <div class="motivation__content" data-aos="fade-up">
+                            <i class="ri-double-quotes-l"
+                                style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1.5rem; display: block; opacity: 0.8;"></i>
+                            <h2 class="motivation__quote"
+                                style="font-size: clamp(2rem, 5vw, 3.5rem); font-family: 'Playfair Display', serif; font-style: italic; color: var(--color-gray-900); margin-bottom: 2.5rem; line-height: 1.3; font-weight: 700;">
+                                "Believe in yourself & you will be Unstoppable"
+                            </h2>
+                            <div class="motivation__divider"
+                                style="width: 80px; height: 4px; background: var(--gradient-primary); margin: 0 auto 3rem; border-radius: 2px;">
+                            </div>
+                            <div class="motivation__values"
+                                style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                                <div class="motivation__value-item"
+                                    style="background: var(--color-white); padding: 1rem 2rem; border-radius: 50px; box-shadow: var(--shadow-sm);">
+                                    <span class="motivation__value"
+                                        style="font-size: 1.1rem; font-weight: 600; color: var(--color-gray-800); text-transform: uppercase; letter-spacing: 1px;">
+                                        <i class="ri-history-line"
+                                            style="color: var(--color-primary); vertical-align: middle; margin-right: 8px;"></i>
+                                        Every Moment Counts
+                                    </span>
+                                </div>
+                                <div class="motivation__value-item"
+                                    style="background: var(--color-white); padding: 1rem 2rem; border-radius: 50px; box-shadow: var(--shadow-sm);">
+                                    <span class="motivation__value"
+                                        style="font-size: 1.1rem; font-weight: 600; color: var(--color-gray-800); text-transform: uppercase; letter-spacing: 1px;">
+                                        <i class="ri-repeat-line"
+                                            style="color: var(--color-primary); vertical-align: middle; margin-right: 8px;"></i>
+                                        Consistency Matters
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Blog / Articles Section (New) -->
+                <!-- International Experience & Mentorship (New) -->
+                <section class="experience-gallery section" id="international-experience">
+                    <div class="container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">International Experience & Mentorship</h2>
+                            <p class="section__subtitle">Global Exposure & Knowledge Sharing</p>
+                        </div>
+
+                        <div class="exp-gallery__content" data-aos="fade-up">
+                            <div class="exp-gallery__narrative"
+                                style="max-width: 800px; margin: 0 auto 3rem; text-align: center;">
+                                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-gray-700);">
+                                    My journey took a global turn with my first international experience at
+                                    <strong>Taylor's
+                                        University, Malaysia</strong>, where I participated in the <strong>Design
+                                        Thinking
+                                        MADE Conference 2024</strong>. I had the opportunity to propose our innovative
+                                    smart project on an international stage. Following this enriching experience, I
+                                    channeled my learnings into <strong>peer mentoring</strong>, guiding my co-students
+                                    on
+                                    Design Thinking methodologies and fostering a culture of innovation back home.
+                                </p>
+                            </div>
+
+                            <!-- Photo Grid -->
+                            <div class="exp-gallery__grid"
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                                <div class="exp-gallery__item"
+                                    style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md);">
+                                    <img src="./taylors-event.jpg" alt="Taylor's University Event"
+                                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;"
+                                        loading="lazy" onmouseover="this.style.transform='scale(1.05)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </div>
+                                <div class="exp-gallery__item"
+                                    style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md);">
+                                    <img src="./smart-project.jpg" alt="Project Proposal at MADE Conference"
+                                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;"
+                                        loading="lazy" onmouseover="this.style.transform='scale(1.05)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </div>
+                                <div class="exp-gallery__item"
+                                    style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md);">
+                                    <img src="./peer-mentoring-1.jpg" alt="Peer Mentoring Session"
+                                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;"
+                                        loading="lazy" onmouseover="this.style.transform='scale(1.05)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </div>
+                                <div class="exp-gallery__item"
+                                    style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md);">
+                                    <img src="./peer-mentoring-2.jpg" alt="Guiding Students"
+                                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;"
+                                        loading="lazy" onmouseover="this.style.transform='scale(1.05)'"
+                                        onmouseout="this.style.transform='scale(1)'">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+
+                <section class="projects section" id="projects">
+                    <div class="projects__container container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Featured Projects</h2>
+                            <p class="section__subtitle">My technical implementations</p>
+                        </div>
+
+                        <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="web">Web Apps</button>
+                            <button class="filter-btn" data-filter="ai">AI/ML</button>
+                            <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        </div>
+
+                        <div class="featured-strip"
+                            style="margin-bottom: 2rem; color: var(--first-color); font-weight: 600; font-size: 1.1rem;"
+                            data-aos="fade-up">
+                            Featured Engineering Projects
+                        </div>
+
+                        <div class="projects__grid">
+                            <!-- New Project: Maatram KK360 (Top Priority) -->
+                            <article class="project-card" data-category="web ai" data-aos="fade-up" data-aos-delay="50">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Maatram KK360" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/MaatramKK360_frontend"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Maatram KK360 (EdTech Platform)</h3>
+                                    <div class="project-card__badge">🏆 Featured</div>
+                                    <div class="project-card__metrics">
+                                        <div class="metric-item">
+                                            <i class="ri-calendar-check-line"></i>
+                                            <span>Manages <span class="metric-value">50+ university events</span>
+                                                monthly</span>
+                                        </div>
+                                        <div class="metric-item">
+                                            <i class="ri-timer-flash-line"></i>
+                                            <span>Reduced planning time by <span class="metric-value">60%</span> with
+                                                AI</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-card__description">
+                                        • Designed a unified system for Tutor, Class & Student Management, automating
+                                        manual workflows for Maatram Foundation.<br>
+                                        • Features include automated student-volunteer mapping, digital
+                                        televerification, panel interview workflows with auto-generated meeting links,
+                                        and centralized dashboards.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">React/Next.js</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">AWS So</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- New Project: Fake IC Detection -->
+                            <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="100">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Fake IC Detection" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/DCode-v05/Fake-IC-Detection"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=73fOg2WAQlk"
+                                                class="btn btn--sm btn--secondary" target="_blank"
+                                                style="border-color: rgba(255,255,255,0.8); color: #fff;">
+                                                <i class="ri-youtube-line"></i> Demo
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Fake IC Detection System</h3>
+                                    <div class="project-card__metrics">
+                                        <div class="metric-item">
+                                            <i class="ri-eye-line"></i>
+                                            <span>99% Accuracy in <span class="metric-value">IC Detection</span></span>
+                                        </div>
+                                    </div>
+                                    <p class="project-card__description">
+                                        • Developed an ML-based system to detect counterfeit Integrated Circuits (ICs)
+                                        using image processing techniques.<br>
+                                        • Utilizes deep learning models to analyze IC markings and physical
+                                        characteristics for authenticity verification.<br>
+                                        • Integrated into a user-friendly web interface for real-time detection results.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Machine Learning</span>
+                                        <span class="tech-tag">Image Processing</span>
+                                        <span class="tech-tag">Web App</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- New Project: Kerala Farmer Assistance -->
+                            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Krishi Sakhi" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/DCode-v05/Kerala-Farmer-Assistance"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Krishi Sakhi (Farmer Assistance)</h3>
+                                    <div class="project-card__metrics">
+                                        <div class="metric-item">
+                                            <i class="ri-plant-line"></i>
+                                            <span>Supports <span class="metric-value">500+ Farmers</span> with
+                                                resources</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-card__description">
+                                        • Built a comprehensive web application "Krishi Sakhi" to assist farmers in
+                                        Kerala with agricultural resources and market information.<br>
+                                        • Features include crop management tips, weather updates, and a marketplace for
+                                        direct selling.<br>
+                                        • Implemented robust backend services to handle user data and content
+                                        management.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">Full Stack</span>
+                                        <span class="tech-tag">Web App</span>
+                                        <span class="tech-tag">Agriculture</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Project 1: AI Interview Mocker -->
+                            <article class="project-card" data-category="ai web" data-aos="fade-up"
+                                data-aos-delay="100">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="AI Interview Mocker" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/AI-Interview-mocker"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=9lez6djrFas"
+                                                class="btn btn--sm btn--secondary" target="_blank">
+                                                <i class="ri-youtube-line"></i> Demo
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">AI Interview Mocker (GenAI, MERN)</h3>
+                                    <div class="project-card__badge">🏆 Featured</div>
+                                    <div class="project-card__metrics">
+                                        <div class="metric-item">
+                                            <i class="ri-user-voice-line"></i>
+                                            <span>Simulates <span class="metric-value">15+ Interview
+                                                    Scenarios</span></span>
+                                        </div>
+                                        <div class="metric-item">
+                                            <i class="ri-eye-off-line"></i>
+                                            <span><span class="metric-value">95% Accuracy</span> in cheating
+                                                detection</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-card__description">
+                                        • Built an AI interview practice web app using React, Node.js, MongoDB, and
+                                        Gemini APIs to generate role‑specific interview questions and feedback.<br>
+                                        • Designed REST APIs, JWT auth, and session management so multiple users can
+                                        practice simultaneously.<br>
+                                        • Deployed frontend and backend, integrated logging, and handled edge cases like
+                                        timeouts and empty prompts.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Gemini API</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 2: Pharmacist Pro -->
+                            <article class="project-card" data-category="ai web" data-aos="fade-up"
+                                data-aos-delay="150">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Pharmacist Pro" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/PharmacyAssist"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=NRjakuIJkg4"
+                                                class="btn btn--sm btn--secondary" target="_blank">
+                                                <i class="ri-youtube-line"></i> Demo
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Pharmacist Pro (OCR + AI)</h3>
+                                    <div class="project-card__metrics">
+                                        <div class="metric-item">
+                                            <i class="ri-file-text-line"></i>
+                                            <span><span class="metric-value">98% OCR Accuracy</span> for
+                                                prescriptions</span>
+                                        </div>
+                                        <div class="metric-item">
+                                            <i class="ri-time-line"></i>
+                                            <span>Reduces processing time by <span
+                                                    class="metric-value">70%</span></span>
+                                        </div>
+                                    </div>
+                                    <p class="project-card__description">
+                                        • Implemented prescription upload and OCR using Python and Tesseract, then
+                                        structured the output for pharmacists.<br>
+                                        • Designed backend services to validate fields and reduce manual data entry
+                                        time.<br>
+                                        • Used React for pharmacist UI with clear error handling and form validation.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Tesseract OCR</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">FastAPI</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 3: Ping Me -->
+                            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Ping Me Chat App" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/MERN-ChatAI"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=JTu9LErT0Qk"
+                                                class="btn btn--sm btn--secondary" target="_blank">
+                                                <i class="ri-youtube-line"></i> Demo
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Ping Me (Real‑time MERN app)</h3>
+                                    <div class="project-card__metrics">
+                                        <div class="metric-item">
+                                            <i class="ri-speed-line"></i>
+                                            <span><span class="metric-value">Start-up like</span> latency</span>
+                                        </div>
+                                        <div class="metric-item">
+                                            <i class="ri-group-line"></i>
+                                            <span>Scalable to <span class="metric-value">100+</span> users</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-card__description">
+                                        • Built a real‑time communication app with React, Node.js, and WebSockets for
+                                        instant messaging and status updates.<br>
+                                        • Implemented REST APIs, MongoDB schema design, and JWT‑based
+                                        authentication.<br>
+                                        • Optimized API responses and used proper pagination/query filters.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">WebSockets</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 4: SOC/Threat Dashboard -->
+                            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="250">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="SOC/Threat Dashboard" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <span class="btn btn--sm btn--secondary">
+                                                <i class="ri-dashboard-line"></i> Dashboard
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">SOC/Threat Dashboard</h3>
+                                    <p class="project-card__description">
+                                        • Developed dashboards in React to visualize SIEM and Sentinel alerts for
+                                        security analysts.<br>
+                                        • Worked with APIs/log streams (ELK, Sentinel) to surface actionable security
+                                        events.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">ELK Stack</span>
+                                        <span class="tech-tag">Sentinel</span>
+                                        <span class="tech-tag">APIs</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Other Projects -->
+                            <!-- Project 1: Campus Sense -->
+                            <article class="project-card" data-category="web ai" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Campus Sense Project" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/actionhub-org/Campus-Sense"
+                                                class="btn btn--sm btn--primary" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Campus Sense</h3>
+                                    <p class="project-card__description">
+                                        AI-powered event management system for universities with smart resource
+                                        recommendations.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Gemini AI</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 4: Floralnsight -->
+                            <article class="project-card" data-category="ai web" data-aos="fade-up"
+                                data-aos-delay="350">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Floralnsight Plant Analysis" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/PlantAnalysisTool"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=2S0bJ60wKGc"
+                                                class="btn btn--sm btn--secondary" target="_blank">
+                                                <i class="ri-youtube-line"></i> Demo
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Floralnsight</h3>
+                                    <p class="project-card__description">
+                                        AI-powered tool to diagnose plant health through image analysis.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">MERN</span>
+                                        <span class="tech-tag">AI Analysis</span>
+                                        <span class="tech-tag">Image Processing</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 6: Actionhub -->
+                            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Actionhub Task Management" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/Actionhub"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=zxtPYQEKKs8"
+                                                class="btn btn--sm btn--secondary" target="_blank">
+                                                <i class="ri-youtube-line"></i> Demo
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Actionhub</h3>
+                                    <p class="project-card__description">
+                                        Community-based task management tool with real-time collaboration.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Express.Js</span>
+                                        <span class="tech-tag">Tailwind CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 7: Daily Diet -->
+                            <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="400">
+                                <div class="project-card__image">
+                                    <img src="./DailyDiet.png" alt="Daily Diet Smart Plate" class="project__img"
+                                        loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <span class="btn btn--sm btn--secondary">
+                                                <i class="ri-presentation-line"></i> MADE 2024
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Daily Diet (Smart Plate)</h3>
+                                    <p class="project-card__description">
+                                        Smart plate providing real-time nutrition insights and waste management.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">IoT</span>
+                                        <span class="tech-tag">Nutrition Analysis</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">SDG 4</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 8: Autism Prediction -->
+                            <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="450">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="Autism Disorder Prediction" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <a href="https://github.com/Akshayaa139/Autism-Prediction-Project"
+                                                class="btn btn--sm btn--primary" target="_blank">
+                                                <i class="ri-github-line"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Autism Disorder Prediction</h3>
+                                    <p class="project-card__description">
+                                        ML model for early detection of autism spectrum disorder.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">Machine Learning</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Classification</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 9: iOS App -->
+                            <article class="project-card" data-category="mobile" data-aos="fade-up"
+                                data-aos-delay="500">
+                                <div class="project-card__image">
+                                    <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                        alt="iOS App for Infinite Engineers" class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <span class="btn btn--sm btn--secondary">
+                                                <i class="ri-apple-line"></i> iOS App
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Infinite Engineers iOS App</h3>
+                                    <p class="project-card__description">
+                                        Hands-on learning app for kids against rote memorization (SDG 4).
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">Swift</span>
+                                        <span class="tech-tag">Xcode</span>
+                                        <span class="tech-tag">Peer Learning</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 10: Infinite Engineers Website -->
+                            <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="550">
+                                <div class="project-card__image">
+                                    <img src=".\Screenshot 2025-03-01 230243.png" alt="Infinite Engineers Website"
+                                        class="project__img" loading="lazy">
+                                    <div class="project-card__overlay">
+                                        <div class="project-card__actions">
+                                            <span class="btn btn--sm btn--secondary">
+                                                <i class="ri-global-line"></i> Website
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Infinite Engineers Website</h3>
+                                    <p class="project-card__description">
+                                        Dynamic website for STEM education company promoting practical learning.
+                                    </p>
+                                    <div class="project-card__tech">
+                                        <span class="tech-tag">Full Stack</span>
+                                        <span class="tech-tag">Responsive</span>
+                                        <span class="tech-tag">STEM</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- Experience Section -->
+                <section class="experience section" id="experience">
+                    <div class="experience__container container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Experience</h2>
+                            <p class="section__subtitle">My professional journey</p>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Heuristic Labs -->
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-ai-generate"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">AI & ML Intern</h3>
+                                                <h4 class="timeline-item__company-name">Heuristic Labs</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">Sep 2025 – Present</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Spearheaded the development of GEN AI multi-architecture assistant for
+                                        customers, integrating Retrieval-Augmented Generation (RAG) with advanced memory
+                                        management (tested Mem0, Zep)
+                                        <br>- Engineered workflow automation solutions supporting knowledge integration
+                                        using vector databases, enhancing customer platform enablement and self-service
+                                        AI experiences
+                                        <br>- Collaborated with LLM-based agents for conversation routing, database
+                                        updates, and performance analytics using tools such as Supabase and monitoring
+                                        dashboards
+                                        <br>- Built feature-rich assistance systems with effective fallback mechanisms,
+                                        connecting AI with optional human agent routing and continuous feedback loops
+                                        for product improvement
+                                    </p>
+                                    <div class="timeline-item__tech">
+                                        <span class="tech-tag">RAG</span>
+                                        <span class="tech-tag">LLM</span>
+                                        <span class="tech-tag">Vector DB</span>
+                                        <span class="tech-tag">Supabase</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- McKinsey Forward Program -->
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-line-chart-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">Forward Program</h3>
+                                                <h4 class="timeline-item__company-name">McKinsey & Company</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">Sep 2025 – Present</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Selected for McKinsey's flagship Forward Program, a global learning initiative
+                                        focused on building essential leadership and professional skills
+                                        <br>- Developed adaptability and resilience mindsets to navigate change
+                                        effectively and sustain performance under pressure
+                                        <br>- Enhanced problem-solving capabilities through structured frameworks for
+                                        defining, prioritizing, and addressing complex challenges
+                                        <br>- Strengthened communication for impact by learning to craft clear,
+                                        audience-specific messages that drive action
+                                        <br>- Built stronger relationship management and well-being strategies to foster
+                                        collaboration and maintain balance
+                                        <br>- Created a personal digital success toolkit, leveraging digital tools and
+                                        insights to boost productivity
+                                        <br>- Engaged in the Lead Forward Webinar with McKinsey experts, applying
+                                        self-leadership concepts
+                                    </p>
+                                    <div class="timeline-item__tech">
+                                        <span class="tech-tag">Leadership</span>
+                                        <span class="tech-tag">Problem Solving</span>
+                                        <span class="tech-tag">Communication</span>
+                                        <span class="tech-tag">Strategy</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-code-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">Full Stack Developer / Data Manager
+                                                </h3>
+                                                <h4 class="timeline-item__company-name">Infinite Engineers</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">Jun 2024 – Mar 2025</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Developed and maintained Dextor Box platform and iOS app features used by
+                                        students and teachers in STEM learning programs
+                                        <br>- Implemented REST APIs and optimized data flows to improve app
+                                        responsiveness
+                                        <br><b>Tech used: React, Node.js, Swift, REST APIs, HubSpot</b>
+                                    </p>
+                                    <div class="timeline-item__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Swift</span>
+                                        <span class="tech-tag">REST APIs</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-bug-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">Software Engineer Intern</h3>
+                                                <h4 class="timeline-item__company-name">L&T Technology Services</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">Jun 2025 – Aug 2025</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Built React dashboards integrated with ELK / Sentinel APIs to monitor security
+                                        events for enterprise customers
+                                        <br>- Implemented reusable components and API integration patterns, reducing UI
+                                        development time for new views
+                                        <br>- Collaborated with security engineers to translate monitoring requirements
+                                        into UI features and filters
+                                        <br><b>Tech used: React, Node.js, MongoDB, Python, ELK, Sentinel</b>
+                                    </p>
+                                    <div class="timeline-item__tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">ELK Stack</span>
+                                        <span class="tech-tag">Sentinel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-bug-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">MADE 2024 Participant</h3>
+                                                <h4 class="timeline-item__company-name">Taylor's University</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">July 2024</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Learned various technologies and tools in the field of AI and ML
+                                        - Showcased our project on Smart Plate using IoT and ML at MADE 2024 Conference
+                                        <br> - Built a Chatbot using LLM and Python
+                                        <br> - Grasped the importance of Design Thinking and Innovation
+                                    </p>
+                                    <div class="timeline-item__tech">
+                                        <span class="tech-tag">Design Thinking</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">LLM</span>
+                                        <span class="tech-tag">Machine Learning</span>
+                                        <span class="tech-tag">Chatbot</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Book Design Section -->
+                <section class="book-design section" id="book">
+                    <div class="container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Book Design</h2>
+                            <p class="section__subtitle">Practical learning resources</p>
+                        </div>
+
+                        <div class="book-design__content" data-aos="fade-up" data-aos-delay="100">
+                            <div class="book-design__image">
+                                <img src="./bookthumbnail.jpg" alt="Microbit Projects Book by Infinite Engineers"
+                                    class="book-img" loading="lazy">
+                            </div>
+                            <div class="book-design__info">
+                                <h3 class="book-title">Practical STEM Learning</h3>
+                                <p class="book-description">
+                                    Designed this book for Infinite Engineers to provide hands-on learning experiences
+                                    for students, focusing on practical applications of STEM concepts.
+                                </p>
+                                <a href="./Microbit_Projects_Book.pdf" download class="btn btn--primary">
+                                    <i class="ri-download-line"></i> Download Book
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Leadership Section-->
+                <section class="leadership section" id="leadership">
+                    <div class="leadership__container container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Leadership Experience</h2>
+                            <p class="section__subtitle">Community engagement & initiatives</p>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-team-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">Tutor & Mentor</h3>
+                                                <h4 class="timeline-item__company-name">Namadhu Pangu</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">2023 - Present</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Tutored students in core subjects and created personalized lesson plans
+                                        <br>- Helped improve academic performance of underprivileged students
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-google-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">Event Management Head</h3>
+                                                <h4 class="timeline-item__company-name">GDG On Campus KCT</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">2024 - Present</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Promoted to Event Management Head, leading a team of 10+ organizers for
+                                        community events
+                                        <br>- Successfully organized and executed 5+ technical workshops and developer
+                                        meetups
+                                        <br>- Increased community engagement by 40% through strategic event planning and
+                                        promotion
+                                        <br>- Established partnerships with industry professionals for mentorship
+                                        programs
+                                        <br>- Implemented feedback system improving event satisfaction rates to 95%
+                                    </p>
+                                    <div class="timeline-item__tech">
+                                        <span class="tech-tag">Leadership</span>
+                                        <span class="tech-tag">Event Management</span>
+                                        <span class="tech-tag">Community Building</span>
+                                        <span class="tech-tag">Strategic Planning</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- In the Leadership Section, add this timeline item -->
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="timeline-item__marker"></div>
+                                <div class="timeline-item__content">
+                                    <div class="timeline-item__header">
+                                        <div class="timeline-item__company">
+                                            <div class="company-logo">
+                                                <i class="ri-user-add-line"></i>
+                                            </div>
+                                            <div class="company-info">
+                                                <h3 class="timeline-item__title">Admissions Committee</h3>
+                                                <h4 class="timeline-item__company-name">Maatram Foundation</h4>
+                                            </div>
+                                        </div>
+                                        <span class="timeline-item__date">2025</span>
+                                    </div>
+                                    <p class="timeline-item__description">
+                                        - Played a key role in the student admission process for the foundation
+                                        <br>- Played a key role in the Physical Verification Process.
+                                        <br>- Helped select deserving students for educational opportunities
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications Section -->
+                <section class="certifications section" id="certifications">
+                    <div class="container">
+                        <div class="section__header" data-aos="fade-up">
+                            <h2 class="section__title">Certifications</h2>
+                            <p class="section__subtitle">Professional credentials</p>
+                        </div>
+
+                        <div class="certifications__grid">
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="350">
+                                <div class="certification-card__icon">
+                                    <i class="ri-code-line"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Full Stack Web Development With MERN & GenAI</h3>
+                                    <p class="certification-issuer">Udemy</p>
+                                    <span class="certification-date">2025</span>
+                                </div>
+                            </div>
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="400">
+                                <div class="certification-card__icon">
+                                    <i class="ri-store-line"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Advanced Software Engineering</h3>
+                                    <p class="certification-issuer">Walmart USA</p>
+                                    <span class="certification-date">2025</span>
+                                </div>
+                            </div>
+
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-card__icon">
+                                    <i class="ri-google-fill"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Crash Course on Python</h3>
+                                    <p class="certification-issuer">Google</p>
+                                    <span class="certification-date">March 2023</span>
+                                </div>
+                            </div>
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="150">
+                                <div class="certification-card__icon">
+                                    <i class="ri-meta-fill"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">HTML and CSS in Depth</h3>
+                                    <p class="certification-issuer">Meta</p>
+                                    <span class="certification-date">May 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="certification-card__icon">
+                                    <i class="ri-stackshare-line"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Design Thinking</h3>
+                                    <p class="certification-issuer">Stanford University</p>
+                                    <span class="certification-date">September 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="250">
+                                <div class="certification-card__icon">
+                                    <i class="ri-amazon-fill"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Solutions Architecture</h3>
+                                    <p class="certification-issuer">AWS Academy</p>
+                                    <span class="certification-date">December 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="certification-card__icon">
+                                    <i class="ri-global-line"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Sustainable Development Goals</h3>
+                                    <p class="certification-issuer">University of Copenhagen</p>
+                                    <span class="certification-date">April 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="certification-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="certification-card__icon">
+                                    <i class="ri-global-line"></i>
+                                </div>
+                                <div class="certification-card__content">
+                                    <h3 class="certification-title">Google Cloud Platform Badges</h3>
+                                    <p class="certification-issuer">Google</p>
+                                    <span class="certification-date">May 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Hackathons Section -->
+        <section class="hackathons section" id="hackathons">
+            <div class="container">
                 <div class="section__header" data-aos="fade-up">
-                    <h2 class="section__title">Experience</h2>
-                    <p class="section__subtitle">My professional journey</p>
+                    <h2 class="section__title">Hackathons</h2>
+                    <p class="section__subtitle">Competitive coding events</p>
                 </div>
-                
+
                 <div class="timeline">
-                    <!-- Heuristic Labs -->
+                    <!-- Innovation and Build Hackathon -->
                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                         <div class="timeline-item__marker"></div>
                         <div class="timeline-item__content">
                             <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-ai-generate"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">AI & ML Intern</h3>
-                                        <h4 class="timeline-item__company-name">Heuristic Labs</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">Sep 2025 – Present</span>
+                                <h3 class="timeline-item__title">Innovation and Build Hackathon</h3>
+                                <span class="timeline-item__date">2025</span>
                             </div>
                             <p class="timeline-item__description">
-                                - Spearheaded the development of GEN AI multi-architecture assistant for customers, integrating Retrieval-Augmented Generation (RAG) with advanced memory management (tested Mem0, Zep)
-                                <br>- Engineered workflow automation solutions supporting knowledge integration using vector databases, enhancing customer platform enablement and self-service AI experiences
-                                <br>- Collaborated with LLM-based agents for conversation routing, database updates, and performance analytics using tools such as Supabase and monitoring dashboards
-                                <br>- Built feature-rich assistance systems with effective fallback mechanisms, connecting AI with optional human agent routing and continuous feedback loops for product improvement
+                                - Developed a comprehensive dengue prevention system for regional disease control
+                                <br>- Implemented ML-based prediction models for dengue outbreak patterns
+                                <br>- Created real-time monitoring dashboard for health authorities
+                                <br>- Integrated IoT sensors for environmental data collection
                             </p>
                             <div class="timeline-item__tech">
-                                <span class="tech-tag">RAG</span>
-                                <span class="tech-tag">LLM</span>
-                                <span class="tech-tag">Vector DB</span>
-                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">IoT</span>
+                                <span class="tech-tag">Data Analytics</span>
+                                <span class="tech-tag">Healthcare</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- McKinsey Forward Program -->
                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
                         <div class="timeline-item__marker"></div>
                         <div class="timeline-item__content">
                             <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-line-chart-line"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">Forward Program</h3>
-                                        <h4 class="timeline-item__company-name">McKinsey & Company</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">Sep 2025 – Present</span>
+                                <h3 class="timeline-item__title">IEEE Xtreme Coding Competition</h3>
+                                <span class="timeline-item__date">October 2023</span>
                             </div>
                             <p class="timeline-item__description">
-                                - Selected for McKinsey's flagship Forward Program, a global learning initiative focused on building essential leadership and professional skills
-                                <br>- Developed adaptability and resilience mindsets to navigate change effectively and sustain performance under pressure
-                                <br>- Enhanced problem-solving capabilities through structured frameworks for defining, prioritizing, and addressing complex challenges
-                                <br>- Strengthened communication for impact by learning to craft clear, audience-specific messages that drive action
-                                <br>- Built stronger relationship management and well-being strategies to foster collaboration and maintain balance
-                                <br>- Created a personal digital success toolkit, leveraging digital tools and insights to boost productivity
-                                <br>- Engaged in the Lead Forward Webinar with McKinsey experts, applying self-leadership concepts
+                                Secured 1400th rank globally in this prestigious coding competition.
                             </p>
-                            <div class="timeline-item__tech">
-                                <span class="tech-tag">Leadership</span>
-                                <span class="tech-tag">Problem Solving</span>
-                                <span class="tech-tag">Communication</span>
-                                <span class="tech-tag">Strategy</span>
-                            </div>
                         </div>
                     </div>
-                    
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">TNWISE 2025</h3>
+                                <span class="timeline-item__date">2025</span>
+                            </div>
+                            <p class="timeline-item__description">
+                                Participated in Tamil Nadu's largest hackathon for Women in Science and Engineering with
+                                the theme "Sustainable Digital Wellbeing and Community Empowerment."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">Hack For Impact Finals</h3>
+                                <span class="timeline-item__date">2025</span>
+                            </div>
+                            <p class="timeline-item__description">
+                                Developed PharmAssist Pro - an AI-powered pharmacy assistance tool with OCR prescription
+                                processing and compliance checks at IIIT Delhi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">Flipkart Grid 7.0</h3>
+                                <span class="timeline-item__date">2025</span>
+                            </div>
+                            <p class="timeline-item__description">
+                                Shortlisted in the national-level Flipkart Grid challenge for innovative e-commerce
+                                solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="450">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">Walmart Sparkathon 2025</h3>
+                                <span class="timeline-item__date">2025</span>
+                            </div>
+                            <p class="timeline-item__description">
+                                Created Smart ACC Scheduler to optimize Walmart's Auto Care Center operations, reducing
+                                wait times and improving efficiency.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">Smart India Hackathon</h3>
+                                <span class="timeline-item__date">2024</span>
+                            </div>
+                            <p class="timeline-item__description">
+                                Participated in the national-level hackathon with innovative solutions.
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                         <div class="timeline-item__marker"></div>
                         <div class="timeline-item__content">
                             <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-code-line"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">Full Stack Developer / Data Manager</h3>
-                                        <h4 class="timeline-item__company-name">Infinite Engineers</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">Jun 2024 – Mar 2025</span>
+                                <h3 class="timeline-item__title">Google Girl Hackathon</h3>
+                                <span class="timeline-item__date">2025</span>
                             </div>
                             <p class="timeline-item__description">
-                                - Designed and developed the Dextor Box full-stack web platform and iOS application using Swift
-                                <br>- Built HubSpot data pipelines for 900+ educational institutions with 98% data accuracy
-                                <br>- Data Analysis and Visualization for schools and Data Management with CRM systems 
+                                Built a Pharmacy Assistance App with innovative features.
                             </p>
-                            <div class="timeline-item__tech">
-                                <span class="tech-tag">Swift</span>
-                                <span class="tech-tag">Data Analysis</span>
-                                <span class="tech-tag">HubSpot</span>
-                                <span class="tech-tag">Full Stack</span>
-                            </div>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="timeline-item__marker"></div>
                         <div class="timeline-item__content">
                             <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-bug-line"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">Software Engineer Intern</h3>
-                                        <h4 class="timeline-item__company-name">L&T Technology Services</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">Jun 2025 – Aug 2025</span>
+                                <h3 class="timeline-item__title">HappyFox 2025 Finals</h3>
+                                <span class="timeline-item__date">2025</span>
                             </div>
                             <p class="timeline-item__description">
-                                     - Created KQL Queries for several use cases in real time 
-                                     -  Developed SOC dashboard with React + ELK handling 5K events/sec
-                                <br> - Built Threat Contextualize micro-service reducing analyst triage time by 30%
-                                <br>- Created SIEM log analysis tool with ELK Stack for security monitoring
+                                Participated in the HappyFox hiring challenge and innovated a real world solution in the
+                                field of Education"
                             </p>
-                            <div class="timeline-item__tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">LLM</span>
-                                <span class="tech-tag">Microsoft Sentinel</span>
-                                <span class="tech-tag">ELK Stack</span>
-                                <span class="tech-tag">Cybersecurity tools</span>
-                            </div>
                         </div>
                     </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
                         <div class="timeline-item__marker"></div>
                         <div class="timeline-item__content">
                             <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-bug-line"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">MADE 2024 Participant</h3>
-                                        <h4 class="timeline-item__company-name">Taylor's University</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">July 2024</span>
+                                <h3 class="timeline-item__title">Hackforge 2025</h3>
+                                <span class="timeline-item__date">2025</span>
                             </div>
                             <p class="timeline-item__description">
-                                     - Learned various technologies and tools in the field of AI and ML
-                                     - Showcased our project on Smart Plate using IoT and ML at MADE 2024 Conference
-                                <br> - Built a Chatbot using LLM and Python
-                                <br> - Grasped the importance of Design Thinking and Innovation
+                                Projected our solution in education, focusing on admission assistance and career
+                                guidance systems.
                             </p>
-                            <div class="timeline-item__tech">
-                                <span class="tech-tag">Design Thinking</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">LLM</span>
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Chatbot</span>
-                                
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Book Design Section -->
-<section class="book-design section" id="book">
-    <div class="container">
-        <div class="section__header" data-aos="fade-up">
-            <h2 class="section__title">Book Design</h2>
-            <p class="section__subtitle">Practical learning resources</p>
-        </div>
-        
-        <div class="book-design__content" data-aos="fade-up" data-aos-delay="100">
-            <div class="book-design__image">
-                <img src="./bookthumbnail.jpg" 
-                     alt="Microbit Projects Book by Infinite Engineers" 
-                     class="book-img">
-            </div>
-            <div class="book-design__info">
-                <h3 class="book-title">Practical STEM Learning</h3>
-                <p class="book-description">
-                    Designed this book for Infinite Engineers to provide hands-on learning experiences 
-                    for students, focusing on practical applications of STEM concepts.
-                </p>
-                <a href="./Microbit_Projects_Book.pdf" download class="btn btn--primary">
-                    <i class="ri-download-line"></i> Download Book
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+        <!-- Career Interests Section -->
+        <section class="work-with-me section" id="work-with-me">
+            <div class="container">
+                <div class="work-with-me__content" data-aos="fade-up">
+                    <div class="work-with-me__text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                        <h2 class="section__title" style="margin-bottom: 2rem;">My Career
+                            Interests</h2>
 
-        <!--Leadership Section-->
-        <section class="leadership section" id="leadership">
-            <div class="leadership__container container">
-                <div class="section__header" data-aos="fade-up">
-                    <h2 class="section__title">Leadership Experience</h2>
-                    <p class="section__subtitle">Community engagement & initiatives</p>
-                </div>
-                
-                <div class="timeline">
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="timeline-item__marker"></div>
-                        <div class="timeline-item__content">
-                            <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-team-line"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">Tutor & Mentor</h3>
-                                        <h4 class="timeline-item__company-name">Namadhu Pangu</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">2023 - Present</span>
-                            </div>
-                            <p class="timeline-item__description">
-                                - Tutored students in core subjects and created personalized lesson plans
-                                <br>- Helped improve academic performance of underprivileged students
+                        <div class="interests-content" style="margin-bottom: 2.5rem; text-align: center;">
+                            <p
+                                style="font-size: 1.25rem; margin-bottom: 1rem; font-weight: 500; color: var(--title-color);">
+                                <span style="color: var(--first-color); font-weight: 700;">Looking for:</span>
+                                Software Engineer / SDE roles (Full Stack, Backend, or AI-integrated products).
+                            </p>
+                            <p style="font-size: 1.1rem; color: var(--text-color);">
+                                <span style="font-weight: 600;">Location:</span> Open to remote and on-site roles.
                             </p>
                         </div>
-                    </div>
-                    
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="timeline-item__marker"></div>
-                        <div class="timeline-item__content">
-                            <div class="timeline-item__header">
-                                <div class="timeline-item__company">
-                                    <div class="company-logo">
-                                        <i class="ri-google-line"></i>
-                                    </div>
-                                    <div class="company-info">
-                                        <h3 class="timeline-item__title">Event Management Head</h3>
-                                        <h4 class="timeline-item__company-name">GDG On Campus KCT</h4>
-                                    </div>
-                                </div>
-                                <span class="timeline-item__date">2024 - Present</span>
-                            </div>
-                            <p class="timeline-item__description">
-                                - Promoted to Event Management Head, leading a team of 10+ organizers for community events
-                                <br>- Successfully organized and executed 5+ technical workshops and developer meetups
-                                <br>- Increased community engagement by 40% through strategic event planning and promotion
-                                <br>- Established partnerships with industry professionals for mentorship programs
-                                <br>- Implemented feedback system improving event satisfaction rates to 95%
-                            </p>
-                            <div class="timeline-item__tech">
-                                <span class="tech-tag">Leadership</span>
-                                <span class="tech-tag">Event Management</span>
-                                <span class="tech-tag">Community Building</span>
-                                <span class="tech-tag">Strategic Planning</span>
-                            </div>
+
+                        <div class="work-with-me__actions" style="justify-content: center; gap: 1.5rem;">
+                            <a href="#contact" class="btn btn--primary">
+                                <i class="ri-mail-send-line"></i> Contact Me
+                            </a>
+                            <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290" class="btn btn--secondary"
+                                target="_blank">
+                                <i class="ri-linkedin-line"></i> LinkedIn
+                            </a>
+                            <a href="https://drive.google.com/file/d/1rAvu5tCH83OZTMkCow5bP-MEU-WMtDii/view"
+                                class="btn btn--secondary" target="_blank">
+                                <i class="ri-file-download-line"></i> Resume
+                            </a>
                         </div>
                     </div>
-
-                    <!-- In the Leadership Section, add this timeline item -->
-<div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-    <div class="timeline-item__marker"></div>
-    <div class="timeline-item__content">
-        <div class="timeline-item__header">
-            <div class="timeline-item__company">
-                <div class="company-logo">
-                    <i class="ri-user-add-line"></i>
-                </div>
-                <div class="company-info">
-                    <h3 class="timeline-item__title">Admissions Committee</h3>
-                    <h4 class="timeline-item__company-name">Maatram Foundation</h4>
-                </div>
-            </div>
-            <span class="timeline-item__date">2025</span>
-        </div>
-        <p class="timeline-item__description">
-            - Played a key role in the student admission process for the foundation
-            <br>- Played a key role in the Physical Verification Process.
-            <br>- Helped select deserving students for educational opportunities
-        </p>
-    </div>
-</div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications Section -->
-<section class="certifications section" id="certifications">
-    <div class="container">
-        <div class="section__header" data-aos="fade-up">
-            <h2 class="section__title">Certifications</h2>
-            <p class="section__subtitle">Professional credentials</p>
-        </div>
-        
-        <div class="certifications__grid">
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="350">
-                <div class="certification-card__icon">
-                    <i class="ri-code-line"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Full Stack Web Development With MERN & GenAI</h3>
-                    <p class="certification-issuer">Udemy</p>
-                    <span class="certification-date">2025</span>
-                </div>
-            </div>
-
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-card__icon">
-                    <i class="ri-store-line"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Advanced Software Engineering</h3>
-                    <p class="certification-issuer">Walmart USA</p>
-                    <span class="certification-date">2025</span>
-                </div>
-            </div>
-        
-
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="certification-card__icon">
-                    <i class="ri-google-fill"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Crash Course on Python</h3>
-                    <p class="certification-issuer">Google</p>
-                    <span class="certification-date">March 2023</span>
-                </div>
-            </div>
-            
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="150">
-                <div class="certification-card__icon">
-                    <i class="ri-meta-fill"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">HTML and CSS in Depth</h3>
-                    <p class="certification-issuer">Meta</p>
-                    <span class="certification-date">May 2024</span>
-                </div>
-            </div>
-            
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="certification-card__icon">
-                    <i class="ri-stackshare-line"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Design Thinking</h3>
-                    <p class="certification-issuer">Stanford University</p>
-                    <span class="certification-date">September 2024</span>
-                </div>
-            </div>
-            
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="250">
-                <div class="certification-card__icon">
-                    <i class="ri-amazon-fill"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Solutions Architecture</h3>
-                    <p class="certification-issuer">AWS Academy</p>
-                    <span class="certification-date">December 2024</span>
-                </div>
-            </div>
-            
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="certification-card__icon">
-                    <i class="ri-global-line"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Sustainable Development Goals</h3>
-                    <p class="certification-issuer">University of Copenhagen</p>
-                    <span class="certification-date">April 2024</span>
-                </div>
-            </div>
-
-            <div class="certification-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="certification-card__icon">
-                    <i class="ri-global-line"></i>
-                </div>
-                <div class="certification-card__content">
-                    <h3 class="certification-title">Google Cloud Platform Badges</h3>
-                    <p class="certification-issuer">Google</p>
-                    <span class="certification-date">May 2024</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</section>
-
-<!-- Hackathons Section -->
-<section class="hackathons section" id="hackathons">
-    <div class="container">
-        <div class="section__header" data-aos="fade-up">
-            <h2 class="section__title">Hackathons</h2>
-            <p class="section__subtitle">Competitive coding events</p>
-        </div>
-        
-        <div class="timeline">
-            <!-- Innovation and Build Hackathon -->
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Innovation and Build Hackathon</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        - Developed a comprehensive dengue prevention system for regional disease control
-                        <br>- Implemented ML-based prediction models for dengue outbreak patterns
-                        <br>- Created real-time monitoring dashboard for health authorities
-                        <br>- Integrated IoT sensors for environmental data collection
-                    </p>
-                    <div class="timeline-item__tech">
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Data Analytics</span>
-                        <span class="tech-tag">Healthcare</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">IEEE Xtreme Coding Competition</h3>
-                        <span class="timeline-item__date">October 2023</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Secured 1400th rank globally in this prestigious coding competition.
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">TNWISE 2025</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Participated in Tamil Nadu's largest hackathon for Women in Science and Engineering with the theme "Sustainable Digital Wellbeing and Community Empowerment."
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Hack For Impact Finals</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Developed PharmAssist Pro - an AI-powered pharmacy assistance tool with OCR prescription processing and compliance checks at IIIT Delhi.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Flipkart Grid 7.0</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Shortlisted in the national-level Flipkart Grid challenge for innovative e-commerce solutions.
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="450">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Walmart Sparkathon 2025</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Created Smart ACC Scheduler to optimize Walmart's Auto Care Center operations, reducing wait times and improving efficiency.
-                    </p>
-                </div>
-            </div>
 
 
-            
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Smart India Hackathon</h3>
-                        <span class="timeline-item__date">2024</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Participated in the national-level hackathon with innovative solutions.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Google Girl Hackathon</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Built a Pharmacy Assistance App with innovative features.
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">HappyFox 2025 Finals</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Participated in the HappyFox hiring challenge and innovated a real world solution in the field of Education"
-                    </p>
-                </div>
-            </div>
-            
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
-                <div class="timeline-item__marker"></div>
-                <div class="timeline-item__content">
-                    <div class="timeline-item__header">
-                        <h3 class="timeline-item__title">Hackforge 2025</h3>
-                        <span class="timeline-item__date">2025</span>
-                    </div>
-                    <p class="timeline-item__description">
-                        Projected our solution in education, focusing on admission assistance and career guidance systems.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-        
 
         <!-- Awards Section -->
         <section class="achievements section" id="achievements">
@@ -1247,7 +1832,7 @@
                     <h2 class="section__title">Awards & Achievements</h2>
                     <p class="section__subtitle">Recognition for excellence</p>
                 </div>
-                
+
                 <div class="achievements__grid">
 
                     <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
@@ -1272,7 +1857,8 @@
                             <h3 class="achievement-card__title">Star Of Maatram Award</h3>
                             <p class="achievement-card__issuer">Maatram Foundation</p>
                             <p class="achievement-card__description">
-                                Recognized for excellence in academics, volunteer leadership and institutional performance
+                                Recognized for excellence in academics, volunteer leadership and institutional
+                                performance
                             </p>
                             <span class="achievement-card__date">2025</span>
                         </div>
@@ -1286,13 +1872,14 @@
                             <h3 class="achievement-card__title">JC Recognition</h3>
                             <p class="achievement-card__issuer">NM-Step Annual Meet</p>
                             <p class="achievement-card__description">
-                                Honored twice for academic excellence and volunteer contributions at the NM-Step Annual Meet.
+                                Honored twice for academic excellence and volunteer contributions at the NM-Step Annual
+                                Meet.
                             </p>
                             <span class="achievement-card__date">2025</span>
                         </div>
                     </div>
-                
-                    
+
+
                     <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="achievement-card__icon">
                             <i class="ri-medal-line"></i>
@@ -1306,7 +1893,7 @@
                             <span class="achievement-card__date">2025</span>
                         </div>
                     </div>
-                    
+
                     <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="achievement-card__icon">
                             <i class="ri-award-line"></i>
@@ -1321,7 +1908,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
             </div>
         </section>
         <!-- Contact Section -->
@@ -1331,15 +1918,15 @@
                     <h2 class="section__title">Get In Touch</h2>
                     <p class="section__subtitle">Let's work together</p>
                 </div>
-                
+
                 <div class="contact__content">
                     <div class="contact__info" data-aos="fade-right">
                         <h3 class="contact__info-title">Let's discuss your project</h3>
                         <p class="contact__info-description">
-                            I'm always interested in new opportunities and exciting projects. 
+                            I'm always interested in new opportunities and exciting projects.
                             Whether you have a question or just want to say hi, I'll get back to you!
                         </p>
-                        
+
                         <div class="contact__details">
                             <div class="contact-detail">
                                 <div class="contact-detail__icon">
@@ -1347,65 +1934,65 @@
                                 </div>
                                 <div class="contact-detail__info">
                                     <h4 class="contact-detail__title">Email</h4>
-                                    <a href="mailto:akshayaa.23cs@kct.ac.in" class="contact-detail__value">
-                                        akshayaa.23cs@kct.ac.in
+                                    <a href="mailto:akshlearn13@gmail.com" class="contact-detail__value">
+                                        akshlearn13@gmail.com
                                     </a>
                                 </div>
                             </div>
-                            
+
                             <div class="contact-detail">
                                 <div class="contact-detail__icon">
                                     <i class="ri-linkedin-line"></i>
                                 </div>
                                 <div class="contact-detail__info">
                                     <h4 class="contact-detail__title">LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290" 
-                                       class="contact-detail__value" target="_blank">
+                                    <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290"
+                                        class="contact-detail__value" target="_blank">
                                         Connect with me
                                     </a>
                                 </div>
                             </div>
-                            
+
                             <div class="contact-detail">
                                 <div class="contact-detail__icon">
                                     <i class="ri-github-line"></i>
                                 </div>
                                 <div class="contact-detail__info">
                                     <h4 class="contact-detail__title">GitHub</h4>
-                                    <a href="https://github.com/Akshayaa139" 
-                                       class="contact-detail__value" target="_blank">
+                                    <a href="https://github.com/Akshayaa139" class="contact-detail__value"
+                                        target="_blank">
                                         View my repositories
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <form class="contact__form" data-aos="fade-left" id="contact-form">
                         <div class="form-group">
                             <input type="text" id="name" name="name" class="form-input" required>
                             <label for="name" class="form-label">Your Name</label>
                             <span class="form-error" id="name-error"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <input type="email" id="email" name="email" class="form-input" required>
                             <label for="email" class="form-label">Your Email</label>
                             <span class="form-error" id="email-error"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" class="form-input" required>
                             <label for="subject" class="form-label">Subject</label>
                             <span class="form-error" id="subject-error"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
                             <label for="message" class="form-label">Your Message</label>
                             <span class="form-error" id="message-error"></span>
                         </div>
-                        
+
                         <button type="submit" class="btn btn--primary btn--full">
                             <span class="btn-text">Send Message</span>
                             <div class="btn-loading">
@@ -1425,18 +2012,22 @@
                 <div class="footer__info">
                     <h3 class="footer__title">Akshayaa Prakash</h3>
                     <p class="footer__description">
-                        Software Engineer passionate about creating innovative digital solutions.
+                        Software Engineer passionate about creating innovative digital solutions.<br>
+                        <strong>Open for SDE Roles:</strong> Bangalore / Chennai / Coimbatore / Remote.
                     </p>
                 </div>
-                
+
                 <div class="footer__social">
-                    <a href="mailto:akshayaa.23cs@kct.ac.in" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:akshlearn13@gmail.com" class="social-link" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="ri-mail-line"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/akshayaa-prakash-656316290" class="social-link" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="ri-linkedin-line"></i>
                     </a>
-                    <a href="https://github.com/Akshayaa139" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Akshayaa139" class="social-link" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="ri-github-line"></i>
                     </a>
                     <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -1447,13 +2038,14 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="footer__bottom">
                 <p class="footer__copy">
                     &copy; 2024 Akshayaa Prakash. All rights reserved.
                 </p>
                 <p class="footer__portfolio-link">
-                    Previous Portfolio: <a href="https://akshayaa139.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">View Legacy Site</a>
+                    Previous Portfolio: <a href="https://akshayaa139.github.io/Portfolio/" target="_blank"
+                        rel="noopener noreferrer">View Legacy Site</a>
                 </p>
             </div>
         </div>
@@ -1465,5 +2057,7 @@
     <script src="scripts/animations.js"></script>
     <script src="scripts/theme.js"></script>
     <script src="scripts/particles.js"></script>
+    <script src="scripts/leetcode.js"></script>
 </body>
+
 </html>
