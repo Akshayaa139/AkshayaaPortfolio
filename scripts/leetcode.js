@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Manual/Static Stats for TUF/DSA
     const stats = {
-        totalSolved: 206,
+        totalSolved: 307,
         totalQuestions: 1024, // Assumed total or strictly TUF sheet total
-        easySolved: 37,
+        easySolved: 57,
         totalEasy: 317,
-        mediumSolved: 92,
+        mediumSolved: 142,
         totalMedium: 449,
-        hardSolved: 77,
+        hardSolved: 108,
         totalHard: 258
     };
 
